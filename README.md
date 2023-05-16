@@ -14,7 +14,7 @@ For Final-examination.
 第四步：
 　　依序輸入以下指令可以完成第一次的載入與上傳：
   　　　git init
-  　　　git remote add origin https://github.com/Schokolade-und-Kaffee/ForMidterm.git
+  　　　git remote add origin https://github.com/Schokolade-und-Kaffee/Final-examination.git
 　　　　git config --global user.email "輸入你的電子郵件"
 　　　　git config --global user.name "輸入你的暱稱"
 　　　　git add .
