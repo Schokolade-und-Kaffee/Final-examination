@@ -27,7 +27,7 @@ For Final-examination.
   　　　git branch -m master <你的暱稱（大小於不用打）>
   　　　git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
 ```
-    ## 檔案出現後就可以開始編輯，然後上傳所需的指令為：
+   ## 檔案出現後就可以開始編輯，然後上傳所需的指令為：##
 ```
   　　　git config --global user.email "輸入你的電子郵件"
 　　　　git config --global user.name "輸入你的暱稱"
