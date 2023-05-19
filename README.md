@@ -24,7 +24,7 @@ For Final-examination.
   　依序輸入以下指令可以完成第一次的載入與上傳：
 ```
   　　　git init
-  　　　git branch -m master main
+  　　　git branch -m master <你的暱稱（大小於不用打）>
   　　　git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
 ```
 　　檔案出現後就可以開始編輯，然後上傳所需的指令為：
@@ -33,7 +33,7 @@ For Final-examination.
 　　　　git config --global user.name "輸入你的暱稱"
 　　　　git add .
 　　　　git commit -m "輸入更新註記"
-　　　　git push origin main
+　　　　git push origin <你的暱稱（大小於不用打）>
 ```
 * 第五步：
 
