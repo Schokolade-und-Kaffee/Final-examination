@@ -1,7 +1,7 @@
 # Final-examination
 For Final-examination.
 
-首次加入編輯的行列的話，請從第一步做起。
+## 首次加入編輯的行列的話，請從第一步做起。
 
 * 第一步：
 
@@ -27,13 +27,13 @@ For Final-examination.
   　　　git branch -m master <你的暱稱（大小於不用打）>
   　　　git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
 ```
-　　檔案出現後就可以開始編輯，然後上傳所需的指令為：
+　　## 檔案出現後就可以開始編輯，然後上傳所需的指令為：
 ```
   　　　git config --global user.email "輸入你的電子郵件"
 　　　　git config --global user.name "輸入你的暱稱"
 　　　　git add .
 　　　　git commit -m "輸入更新註記"
-　　　　git push origin <你的暱稱（大小於不用打）>
+　　　　git push origin <剛剛輸入的暱稱（大小於不用打）>
 ```
 * 第五步：
 
