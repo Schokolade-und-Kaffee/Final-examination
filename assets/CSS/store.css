@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+header {
+    background-color: #1A535C;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+
+nav {
+    /*background-color: #F7FFF7;*/
+    background-color: #E9F7F9;
+    text-align: center;
+    font-family: Arial;
+    font-size: 28px;
+    /*margin-bottom: 20px;*/
+    position: relative;
+    height: 60px;
+}
+
+nav a {
+    padding: 14px 16px;
+    display: inline-block;
+    font-size: 22px;
+}
+
+nav a:hover {
+    background-color: #FFF5FF;
+    color: #1A535C;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+li ul {
+    display: none;
+    font-size: 24px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.295);
+    border: 2px solid #ccc;
+}
+
+li:hover ul {
+    display: block;
+}
+
+body {
+    background-color: #F7FFF7;
+    margin: 0px;
+}
+
+main {
+    padding: 20px;
+    width: 70%;
+
+    display: grid;
+
+    /* 5*3 grid */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-auto-flow: row;
+}
+
+h3 {
+    margin: 5px 0px;
+    color: #1A485C;
+}
+
+/*section {
+    border: solid gray 5px;
+}*/
+
+section img {
+    border: solid gold 5px;
+    margin: 10px 0px;
+}
+
+p {
+    font-size: 18px;
+    color: #FF6B6B;
+}
+
+
+footer {
+    background-color: #1A535C;
+    color: #F7FFF7;
+    text-align: center;
+    padding: 10px;
+
+    margin-top: 20px;
+}
+
+aside {
+    text-align: center;
+
+    grid-area: 6/1/7/4;
+}
+
+.shop {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card {
+    /*background-color: white;*/
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+
+    background-image: url(image/background.jpg);
+    background-size: cover;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+}
+
+h1 {
+    color: #1A485C;
+    font-size: 26px;
+}
+
+.title-container {
+    color: #30ACA4;
+    font-size: 33px;
+    font-weight: bold;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.plain{
+    margin-left: 250px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ad01 {
+    width: 1000px; 
+    margin-left: 250px;
+}
+
+.buy {
+    margin: 5px 0px;
+    color: #F7FFF7;
+}
+
+#custom-link {
+    color: #F7FFF7;
+    text-decoration: none;
+}
+
+#commodity-link{
+    color: #30ACA4;
+    text-decoration: none;
+}
