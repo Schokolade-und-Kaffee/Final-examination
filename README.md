@@ -25,37 +25,54 @@ For Final-examination.
   　依序輸入以下指令可以完成第一次的載入與上傳：
 
     `git init`
+
         初始化。
+
     `git checkout -b <分支名稱>`
+
         將要上傳的檔案加入到電腦上 Git 程式的暫存區中。
+
         `-b` 是 branch 的縮寫，上述指令為 git branch 和 git checkout 的合體。
+
     `git remote add origin https://github.com/Schokolade-und-Kaffee/Final-examination.git`
+
         在電腦端的 Git 程式中，創建出與遠端儲存庫的連結。
 
     可以使用 `git remote -v` 來測試連接狀態。應該會顯示以下兩行：
+
     ```
     origin  https://github.com/Schokolade-und-Kaffee/Final-examination.git (fetch)
     origin  https://github.com/Schokolade-und-Kaffee/Final-examination.git (push) 
     ```
 
     ### 檔案出現後就可以開始編輯。
+    
     可以透過 `git checkout <分支名稱>` 切換主機端的分支。或是你可以用滑鼠點左下角的分支選單切換已有的分支。
 
     
     然後上傳所需的指令為：
 
     `git config --global user.email "輸入你的電子郵件"`
-        提供編輯者的電子郵件。
-    `git config --global user.name "輸入你的暱稱"`
-        提供編輯者名稱。
-    .`
-        將要上傳的檔案加入到電腦上 Git 程式的暫存區中。
-        若只有一個檔案要上傳的話，將 `.` 改成檔案名稱。
-    `git commit -m "輸入更新註記"`
-        加上註解。
-    `git push origin <分支名稱>`
-        推送剛剛暫存的檔案至遠端儲存庫的特定分支。
 
+        提供編輯者的電子郵件。
+
+    `git config --global user.name "輸入你的暱稱"`
+
+        提供編輯者名稱。
+
+    `git add .`
+
+        將要上傳的檔案加入到電腦上 Git 程式的暫存區中。
+
+        若只有一個檔案要上傳的話，將 `.` 改成檔案名稱。
+
+    `git commit -m "輸入更新註記"`
+
+        加上註解。
+
+    `git push origin <分支名稱>`
+
+        推送剛剛暫存的檔案至遠端儲存庫的特定分支。
 
 * 第五步：
 
@@ -79,13 +96,21 @@ For Final-examination.
     ### 以下是已經串好所有連接事項，只是簡單修修改改的推送（上傳）方式。
 
     `git init`
+
         初始化。
+
     `git add .`
+
         將要上傳的檔案加入到電腦上 Git 程式的暫存區中。
+
         若只有一個檔案要上傳的話，將 `.` 改成檔案名稱。
+
     `git commit -m "輸入更新註記"`
+
         加上註解。
+
     `git push origin <分支名稱>`
+
         推送剛剛暫存的檔案至遠端儲存庫的特定分支。
 
 # 未完待續。
