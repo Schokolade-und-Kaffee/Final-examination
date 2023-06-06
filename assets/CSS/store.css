@@ -3,55 +3,40 @@
     margin: 0px auto;
 }
 
-header {
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    grid-gap: 30px;
     background-color: #1A535C;
-    text-align: center;
-    color: white;
-    margin: 0px;
+    color: #F7FFF7;
     padding: 20px;
-}
+    align-items: center;
+  }
+  
+  .shop {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 40%;
+  }
 
-nav {
-    /*background-color: #F7FFF7;*/
-    background-color: #E9F7F9;
-    text-align: center;
-    font-family: Arial;
-    font-size: 28px;
-    /*margin-bottom: 20px;*/
-    position: relative;
-    height: 60px;
-}
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu a:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .icon img {
+    height: 35px;
+    margin-right: 20px;
+  }
 
-nav a {
-    padding: 14px 16px;
-    display: inline-block;
-    font-size: 22px;
-}
-
-nav a:hover {
-    background-color: #FFF5FF;
-    color: #1A535C;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-    position: relative;
-}
-
-li ul {
-    display: none;
-    font-size: 24px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(255, 255, 255, 0.295);
-    border: 2px solid #ccc;
-}
-
-li:hover ul {
-    display: block;
-}
+  #commodity-link:hover {
+    color: #FFE66D; 
+  }
 
 body {
     background-color: #F7FFF7;
@@ -100,8 +85,10 @@ footer {
 }
 
 .shop {
+    color: white;
     font-size: 40px;
-    font-weight: bold;
+    font-family: 'comic sans ms';
+    text-shadow: 7px 7px 5px #000000;
 }
 
 .card {
@@ -161,8 +148,9 @@ h1 {
 }
 
 #commodity-link {
-    color: #30ACA4;
+    color: #F7FFF7;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .all_1 {

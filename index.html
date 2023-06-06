@@ -9,33 +9,47 @@
     <script src="assets/JavaScript/index.js"></script>
 </head>
 <body>
-    <!--Background particles.-->
     <canvas id="canvas"></canvas>
-    
-    <div>
-        <!--Header.-->
-        <header>
-            <h1>shellmood</h1>
-            <nav>
-                <a href="page/introduce.html">介紹</a>
-                ｜
-                <a href="page/contact.html">聯繫我們</a>
-                ｜
-                <a href="page/store.html">商店</a>
-                ｜
-                <a href="page/login.html">登入／註冊</a>
-            </nav>
-        </header>
 
-        <!--Nothing for main.-->
-        <main>
-            
-        </main>
-        
-        <!--Text of footer.-->
-        <footer>
-            
-        </footer>
+    <div class="container">
+        <div class="slide fade">
+            <img src="assets/image/advertise01.png">
+            <div class="text"></div>
+        </div>
+        <div class="slide fade">
+            <div><img src="assets/image/advertise03.png"></div>
+            <div class="text"></div>
+        </div>
+        <div class="slide fade">
+            <img src="assets/image/advertise04.png">
+            <div class="text"></div>
+        </div>
+        <div class="slide fade">
+            <img src="assets/image/advertise05.png">
+            <div class="text"></div>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
+
+
+
+
+    <ul>
+
+        <h1>ShellMood</h1>
+
+        <div></div>
+
+        <li><a href="page/introduce.html">介紹</a></li>
+        
+        <!--<li><a href="page/contact.html">聯繫我們</a></li>-->
+        <li><a href="mailto:s10912125@cycu.edu.tw" title="s10912125@cycu.edu.tw">聯繫我們</a></li>
+        
+        <li><a href="page/store.html">商店</a></li>
+        
+        <li><a href="page/login.html">登入／註冊</a></li>
+    </ul>
+
 </body>
 </html>
