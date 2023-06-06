@@ -60,9 +60,7 @@ h3 {
     color: #1A485C;
 }
 
-/*section {
-    border: solid gray 5px;
-}*/
+
 
 section img {
     border: solid gold 5px;
@@ -92,7 +90,7 @@ footer {
 }
 
 .card {
-    /*background-color: white;*/
+    
     padding: 20px;
     margin: 10px;
     border-radius: 20px;
