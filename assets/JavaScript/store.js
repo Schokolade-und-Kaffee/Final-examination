@@ -1,7 +1,7 @@
 var jsonData = [
   {
     "Name": "Clear 抗黃化透明防摔手機殼［透明］",
-    "Text": "",
+    "Text": "這款手機殼給你的手機提供了極佳的保護和時尚外觀。它由高品質的材料製成，能有效防止手機受到意外的撞擊、刮傷和摔落。薄型輕巧，不會給手機增添多餘的體積和重量。精美設計，讓你的手機顯得與眾不同。",
     "Price": 1020,
     "Image": "../assets/image/plaincolor-transparencycase.png"
   },
@@ -163,7 +163,7 @@ var jsonData = [
   },
   {
     "Name": "DEVILCASE AirPods 保護殼［純黑］",
-    "Text": "",
+    "Text": "這款保護殼由高品質的材料製成，能夠有效保護你的 AirPods 免受刮損、撞擊和灰塵的侵害。它具有緊密配合的設計，完美包裹住你的 AirPods ，為其提供全面的保護，同時不影響充電和操作。",
     "Price": 450,
     "Image": "../assets/image/airpods-black.png"
   },
