@@ -7,6 +7,9 @@
     <title>Airpods保護殼</title>
 
     <link rel="stylesheet" href="../../assets/CSS/store.css">
+    <link rel="stylesheet" href="../../assets/CSS/floatingWindow.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>s
+    <script src="../../assets/JavaScript/store3.js"></script>
   </head>
   <body>
     <header>
@@ -28,12 +31,13 @@
         </div>
       </div>
     </header>
+    <main>
 
       <img class="ad01" src="../../assets/image/advertise07.png">
       <p class="title-container"> Airpods保護殼</p>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-black.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-black.png" class="productBox" data-index="0"></div>
         <h2>DEVILCASE AirPods 保護殼 ＿純黑</h2>
         <p>
           ＄ 450 TWD
@@ -41,14 +45,14 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-darkblue.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-darkblue.png" class="productBox" data-index="1"></div>
         <h2>DEVILCASE AirPods 保護殼 ＿深藍</h2>
         <p>
           ＄ 450 TWD
         </p>
       </section>
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-brown.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-brown.png" class="productBox" data-index="2"></div>
         <h2>DEVILCASE AirPods 保護殼 ＿可可</h2>
         <p>
           ＄ 450 TWD
@@ -56,21 +60,21 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-milktea.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-milktea.png" class="productBox" data-index="3"></div>
         <h2>DEVILCASE AirPods 保護殼 ＿奶茶</h2>
         <p>
           ＄ 450 TWD
         </p>
       </section>
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-skyblue.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-skyblue.png" class="productBox" data-index="4"></div>
         <h2>DEVILCASE AirPods 保護殼 ＿天藍</h2>
         <p>
           ＄ 450 TWD
         </p>
       </section>
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-purple.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-purple.png" class="productBox" data-index="5"></div>
         <h2>DEVILCASE AirPods 保護殼 __紫</h2>
         <p>
           ＄ 450 TWD
@@ -78,7 +82,7 @@
       </section>
       
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-dogsheep.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-dogsheep.png" class="productBox" data-index="6"></div>
         <h2>【獨家設計】CO.ME Planet 微笑豆豆與大菲AirPods防摔保護套 </h2>
         <p>
           ＄ 590 TWD
@@ -86,7 +90,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-chestnut.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-chestnut.png" class="productBox" data-index="7"></div>
         <h2>【獨家設計】CO.ME Planet 栗子微笑打包Airpods保護套 </h2>
         <p>
           ＄ 590 TWD
@@ -94,7 +98,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-dinosaur.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-dinosaur.png" class="productBox" data-index="8"></div>
         <h2>【獨家設計】小恐龍軟糖Airpods防摔保護套 </h2>
         <p>
           ＄ 590 TWD
@@ -102,7 +106,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-chill.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-chill.png" class="productBox" data-index="9"></div>
         <h2>【獨家設計】Am I ugly 悠閒BABY霧面Airpods保護套 </h2>
         <p>
           ＄ 590 TWD
@@ -110,7 +114,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-vegout.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-vegout.png" class="productBox" data-index="10"></div>
         <h2>【獨家設計】Am I ugly 耍廢BABY霧面Airpods保護套 </h2>
         <p>
           ＄ 590 TWD
@@ -118,7 +122,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-vintage.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-vintage.png" class="productBox" data-index="11"></div>
         <h2>【獨家設計】復古日系小恐龍霧面Airpods保護套 </h2>
         <p>
           ＄ 590 TWD
@@ -126,7 +130,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-lightcolor.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-lightcolor.png" class="productBox" data-index="12"></div>
         <h2>【獨家設計】Smilie淡彩笑臉文字防摔行李箱AirPods保護套 </h2>
         <p>
           ＄ 490 TWD
@@ -134,7 +138,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-smile.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-smile.png" class="productBox" data-index="13"></div>
         <h2>【獨家設計】Smilie笑臉水磨石防摔行李箱AirPods保護套</h2>
         <p>
           ＄ 490 TWD
@@ -142,13 +146,36 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/airpods-toyselect.png" /></div>
+        <div class="photo"><img src="../../assets/image/airpods-toyselect.png" class="productBox" data-index="14"></div>
         <h2>【獨家設計】Smilie塗鴉笑臉防摔行李箱AirPods保護套 </h2>
         <p>
           ＄ 490 TWD
         </p>
       </section>
     </main>
+
+    <!-- 商品詳情浮動視窗 -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="product">
+            <h3 id="product-name"></h3>
+            <div>
+              <section>
+                <img src="" alt="Product Image" id="product-image">
+              </section>
+              <section id="infoSecond">
+                <p id="product-text"></p>
+                <p id="product-price"></p>
+                
+                <label for="number">數量</label>
+                <input id="number" type="number" min="1" value="1">
+                <button>直接購買</button>
+              </section>
+            </div>
+          </div>
+      </div>
+    </div>
 
     <footer>
       <h3 class="buy">該買了八，小朋友才等特價</h3>

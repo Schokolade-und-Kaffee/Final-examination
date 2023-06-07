@@ -7,6 +7,9 @@
     <title>設計款手機殼</title>
 
     <link rel="stylesheet" href="../../assets/CSS/store.css">
+    <link rel="stylesheet" href="../../assets/CSS/floatingWindow.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/JavaScript/store2.js"></script>
   </head>
   <body>
     <header>
@@ -30,12 +33,11 @@
     </header>
     
     <main>
-
       <img class="ad01" src="../../assets/image/advertise06.jpg">
       <p class="title-container"> 設計款手機殼</p>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-spacetravel.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-spacetravel.png" class="productBox" data-index="0"></div>
         <h2>【獨家設計】太空寶寶旅行系列霧面防摔iPhone手機殼＿太空旅行 </h2>
         <p>
           ＄ 690 TWD
@@ -43,7 +45,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-spacemoon.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-spacemoon.png" class="productBox" data-index="1"></div>
         <h2>【獨家設計】太空寶寶旅行系列霧面防摔iPhone手機殼＿太空月球 </h2>
         <p>
           ＄ 690 TWD
@@ -51,7 +53,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-spacestar.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-spacestar.png" class="productBox" data-index="2"></div>
         <h2>【獨家設計】小小太空人月亮系列霧面防摔iPhone手機殼＿太空星星 </h2>
         <p>
           ＄ 690 TWD
@@ -59,7 +61,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-flowerdinosaur.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-flowerdinosaur.png" class="productBox" data-index="3"></div>
         <h2>【獨家設計】蠟筆小恐龍系列全包iPhone手機殼 ＿恐龍小花</h2>
         <p>
           ＄ 690 TWD
@@ -67,7 +69,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-maddinosaur.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-maddinosaur.png" class="productBox" data-index="4"></div>
         <h2>【獨家設計】蠟筆小恐龍系列全包iPhone手機殼＿恐龍生氣 </h2>
         <p>
           ＄ 690 TWD
@@ -75,7 +77,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-goodnightdinosaur.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-goodnightdinosaur.png" class="productBox" data-index="5"></div>
         <h2>【獨家設計】晚安小恐龍全包iPhone手機殼＿恐龍晚安 </h2>
         <p>
           ＄ 690 TWD
@@ -83,7 +85,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-babybook.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-babybook.png" class="productBox" data-index="6"></div>
         <h2>【獨家設計】Am I ugly 悠閒BABY系列全包iPhone手機殼＿baby書本</h2>
         <p>
           ＄ 690 TWD
@@ -91,7 +93,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-babynotebook.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-babynotebook.png" class="productBox" data-index="7"></div>
         <h2>【獨家設計】Am I ugly 悠閒BABY系列全包iPhone手機殼＿baby筆電</h2>
         <p>
           ＄ 690 TWD
@@ -99,7 +101,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-babybear.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-babybear.png" class="productBox" data-index="8"></div>
         <h2>【獨家設計】Am I ugly 悠閒BABY系列全包iPhone手機殼＿baby熊 </h2>
         <p>
           ＄ 690 TWD
@@ -107,7 +109,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-shachikucommuter.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-shachikucommuter.png" class="productBox" data-index="9"></div>
         <h2>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔iPhone手機殼＿社畜通勤 </h2>
         <p>
           ＄ 690 TWD
@@ -115,7 +117,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-shachikuwakeup.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-shachikuwakeup.png" class="productBox" data-index="10"></div>
         <h2>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔iPhone手機殼＿社畜起床 </h2>
         <p>
           ＄ 690 TWD
@@ -123,7 +125,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-shachikuovertime.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-shachikuovertime.png" class="productBox" data-index="11"></div>
         <h2>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔iPhone手機殼＿社畜加班 </h2>
         <p>
           ＄ 690 TWD
@@ -131,7 +133,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-latte.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-latte.png" class="productBox" data-index="12"></div>
         <h2>【獨家款】咖啡系系列霧面防摔iPhone手機殼＿咖啡拿鐵</h2>
         <p>
           ＄ 690 TWD
@@ -139,7 +141,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-americano.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-americano.png" class="productBox" data-index="13"></div>
         <h2>【獨家款】咖啡系系列霧面防摔iPhone手機殼＿咖啡美式 </h2>
         <p>
           ＄ 690 TWD
@@ -147,13 +149,36 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/design-offduty.png" /></div>
+        <div class="photo"><img src="../../assets/image/design-offduty.png" class="productBox" data-index="14"></div>
         <h2>【獨家款】不想上班極簡系列霧面防摔iPhone手機殼＿倒數下班</h2>
         <p>
           ＄ 690 TWD
         </p>
       </section>
     </main>
+
+    <!-- 商品詳情浮動視窗 -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="product">
+            <h3 id="product-name"></h3>
+            <div>
+              <section>
+                <img src="" alt="Product Image" id="product-image">
+              </section>
+              <section id="infoSecond">
+                <p id="product-text"></p>
+                <p id="product-price"></p>
+                
+                <label for="number">數量</label>
+                <input id="number" type="number" min="1" value="1">
+                <button>直接購買</button>
+              </section>
+            </div>
+          </div>
+      </div>
+    </div>
 
     <footer>
       <h3 class="buy">該買了八，小朋友才等特價</h3>
