@@ -22,6 +22,6 @@ function submitForm() {
         //表單驗證通過，可以提交表單了
         this.submit();
         alert("登入成功！")
-        window.location.href = "store.html";
+        window.location.href = "personalinformation.html";
     });
 }
