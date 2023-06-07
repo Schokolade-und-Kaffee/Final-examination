@@ -6,45 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商店</title>
     <link rel="stylesheet" href="../assets/CSS/store.css">
+    <link rel="stylesheet" href="../assets/CSS/floatingWindow.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/JavaScript/store.js"></script>
 </head>
 <body>
     <header>
       <a href="../index.html"><h1>shellmood</h1></a>
     </header>
 
-    <!--Bug: Navigator element at wrong position.-->
     <nav>
       <a href="store.html">所有商品</a>
-      <li>
-        <a href="sub/store1.html">素色手機殼</a>
-        <div class="navList">
-          <ul>1</Ul>
-          <ul>2</ul>
-          <ul>3</ul>
-          <ul>4</ul>
-          <ul>5</ul>
-        </div>
-      </li>
-      <li>
-        <a href="sub/store2.html">設計款手機殼</a>
-        <ul>1</Ul>
-        <ul>2</ul>
-        <ul>3</ul>
-        <ul>4</ul>
-        <ul>5</ul>
-      </li>
-      <li>
-        <a href="sub/store3.html">Airpods保護殼</a>
-        <ul>1</Ul>
-        <ul>2</ul>
-        <ul>3</ul>
-        <ul>4</ul>
-        <ul>5</ul>
-      </li>
+      <a href="sub/store1.html">素色手機殼</a>
+      <a href="sub/store2.html">設計款手機殼</a>
+      <a href="sub/store3.html">Airpods保護殼</a>
     </nav>
 
     <main>
-
       <p class="all_1"> 素色手機殼</p>
 
       <div class="plain1">
@@ -52,47 +30,47 @@
       </div>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-transparencycase.png" /></div>
-        <h3>Clear 抗黃化透明防摔手機殼＿透明</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-transparencycase.png" class="productBox" data-index="0"></div>
+        <h3>Clear 抗黃化透明防摔手機殼［透明］</h3>
         <p>
           ＄ 1020 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-blackborder.png" /></div>
-        <h3>CrashGuard 邊框防摔手機殼＿黑邊</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-blackborder.png" class="productBox" data-index="1"></div>
+        <h3>CrashGuard 邊框防摔手機殼［黑邊］</h3>
         <p>
           ＄ 680 TWD
         </p>
       </section>
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-whiteborder.png" /></div>
-        <h3>CrashGuard 邊框防摔手機殼＿白邊</h3>
-        <p>
-          ＄ 680 TWD
-        </p>
-      </section>
-
-      <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-greyborder.png" /></div>
-        <h3>CrashGuard 邊框防摔手機殼＿灰邊</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-whiteborder.png" class="productBox" data-index="2"></div>
+        <h3>CrashGuard 邊框防摔手機殼［白邊］</h3>
         <p>
           ＄ 680 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-purpleborder.png" /></div>
-        <h3>CrashGuard 邊框防摔手機殼＿紫邊</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-greyborder.png" class="productBox" data-index="3"></div>
+        <h3>CrashGuard 邊框防摔手機殼［灰邊］</h3>
         <p>
           ＄ 680 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-yellowborder.png" /></div>
-        <h3>CrashGuard 邊框防摔手機殼＿黃邊</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-purpleborder.png" class="productBox" data-index="4"></div>
+        <h3>CrashGuard 邊框防摔手機殼［紫邊］</h3>
+        <p>
+          ＄ 680 TWD
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="photo"><img src="../assets/image/plaincolor-yellowborder.png" class="productBox" data-index="5"></div>
+        <h3>CrashGuard 邊框防摔手機殼［黃邊］</h3>
         <p>
           ＄ 680 TWD
         </p>
@@ -103,32 +81,32 @@
       </div>
     
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-black.png" /></div>
-        <h3>DEVILCASE 惡魔防摔殼 AIR＿黑</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-black.png" class="productBox" data-index="6"></div>
+        <h3>DEVILCASE 惡魔防摔殼 AIR［黑］</h3>
         <p>
           ＄ 680 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-blue.png" /></div>
-        <h3>DEVILCASE 惡魔防摔殼 AIR＿藍</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-blue.png" class="productBox" data-index="7"></div>
+        <h3>DEVILCASE 惡魔防摔殼 AIR［藍］</h3>
         <p>
           ＄ 680 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-grey.png" /></div>
-        <h3>DEVILCASE 惡魔防摔殼 AIR＿灰</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-grey.png" class="productBox" data-index="8"></div>
+        <h3>DEVILCASE 惡魔防摔殼 AIR［灰］</h3>
         <p>
           ＄ 680 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-lightbrown.png" /></div>
-        <h3>DEVILCASE 惡魔防摔殼 AIR＿烏龍奶</h3>
+        <div class="photo"><img src="../assets/image/plaincolor-lightbrown.png" class="productBox" data-index="9"></div>
+        <h3>DEVILCASE 惡魔防摔殼 AIR［烏龍奶］</h3>
         <p>
           ＄ 680 TWD
         </p>
@@ -143,16 +121,16 @@
       </div>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-mirroblack.png" /></div>
-        <h3> MagSafe 鏡面手機殼＿鏡面黑 </h3>
+        <div class="photo"><img src="../assets/image/plaincolor-mirroblack.png" class="productBox" data-index="10"></div>
+        <h3>MagSafe 鏡面手機殼［鏡面黑］</h3>
         <p>
           ＄ 880 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/plaincolor-mirrorgold.png" /></div>
-        <h3> MagSafe 鏡面手機殼＿鏡面金 </h3>
+        <div class="photo"><img src="../assets/image/plaincolor-mirrorgold.png" class="productBox" data-index="11"></div>
+        <h3>MagSafe 鏡面手機殼［鏡面金］</h3>
         <p>
           ＄ 880 TWD
         </p>
@@ -162,120 +140,120 @@
       <p class="all_2">設計款手機殼</p>
     
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-spacetravel.png" /></div>
-        <h3>【獨家設計】太空寶寶旅行系列霧面防摔iPhone手機殼＿太空旅行 </h3>
+        <div class="photo"><img src="../assets/image/design-spacetravel.png" class="productBox" data-index="12"></div>
+        <h3>【獨家設計】太空寶寶旅行系列霧面防摔 iPhone 手機殼［太空旅行］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-spacemoon.png" /></div>
-        <h3>【獨家設計】太空寶寶旅行系列霧面防摔iPhone手機殼＿太空月球 </h3>
+        <div class="photo"><img src="../assets/image/design-spacemoon.png" class="productBox" data-index="13"></div>
+        <h3>【獨家設計】太空寶寶旅行系列霧面防摔 iPhone 手機殼［太空月球］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-spacestar.png" /></div>
-        <h3>【獨家設計】小小太空人月亮系列霧面防摔iPhone手機殼＿太空星星 </h3>
+        <div class="photo"><img src="../assets/image/design-spacestar.png" class="productBox" data-index="14"></div>
+        <h3>【獨家設計】小小太空人月亮系列霧面防摔 iPhone 手機殼［太空星星］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-flowerdinosaur.png" /></div>
-        <h3>【獨家設計】蠟筆小恐龍系列全包iPhone手機殼 ＿恐龍小花</h3>
+        <div class="photo"><img src="../assets/image/design-flowerdinosaur.png" class="productBox" data-index="15"></div>
+        <h3>【獨家設計】蠟筆小恐龍系列全包 iPhone 手機殼［恐龍小花］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-maddinosaur.png" /></div>
-        <h3>【獨家設計】蠟筆小恐龍系列全包iPhone手機殼＿恐龍生氣 </h3>
+        <div class="photo"><img src="../assets/image/design-maddinosaur.png" class="productBox" data-index="16"></div>
+        <h3>【獨家設計】蠟筆小恐龍系列全包 iPhone 手機殼［恐龍生氣］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-goodnightdinosaur.png" /></div>
-        <h3>【獨家設計】晚安小恐龍全包iPhone手機殼＿恐龍晚安 </h3>
+        <div class="photo"><img src="../assets/image/design-goodnightdinosaur.png" class="productBox" data-index="17"></div>
+        <h3>【獨家設計】晚安小恐龍全包 iPhone 手機殼［恐龍晚安］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-babybook.png" /></div>
-        <h3>【獨家設計】Am I ugly 悠閒BABY系列全包iPhone手機殼＿baby書本</h3>
+        <div class="photo"><img src="../assets/image/design-babybook.png" class="productBox" data-index="18"></div>
+        <h3>【獨家設計】Am I ugly 悠閒 BABY 系列全包 iPhone 手機殼［baby書本］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-babynotebook.png" /></div>
-        <h3>【獨家設計】Am I ugly 悠閒BABY系列全包iPhone手機殼＿baby筆電</h3>
+        <div class="photo"><img src="../assets/image/design-babynotebook.png" class="productBox" data-index="19"></div>
+        <h3>【獨家設計】Am I ugly 悠閒 BABY 系列全包 iPhone 手機殼［baby筆電］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-babybear.png" /></div>
-        <h3>【獨家設計】Am I ugly 悠閒BABY系列全包iPhone手機殼＿baby熊 </h3>
+        <div class="photo"><img src="../assets/image/design-babybear.png" class="productBox" data-index="20"></div>
+        <h3>【獨家設計】Am I ugly 悠閒 BABY 系列全包 iPhone 手機殼［baby熊］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-shachikucommuter.png" /></div>
-        <h3>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔iPhone手機殼＿社畜通勤 </h3>
+        <div class="photo"><img src="../assets/image/design-shachikucommuter.png" class="productBox" data-index="21"></div>
+        <h3>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔 iPhone 手機殼［社畜通勤］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-shachikuwakeup.png" /></div>
-        <h3>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔iPhone手機殼＿社畜起床 </h3>
+        <div class="photo"><img src="../assets/image/design-shachikuwakeup.png" class="productBox" data-index="22"></div>
+        <h3>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔 iPhone 手機殼［社畜起床］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-shachikuovertime.png" /></div>
-        <h3>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔iPhone手機殼＿社畜加班 </h3>
+        <div class="photo"><img src="../assets/image/design-shachikuovertime.png" class="productBox" data-index="23"></div>
+        <h3>【獨家設計】CO.ME Planet 社畜人蔘系列全氣囊防摔 iPhone 手機殼［社畜加班］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-latte.png" /></div>
-        <h3>【獨家款】咖啡系系列霧面防摔iPhone手機殼＿咖啡拿鐵</h3>
+        <div class="photo"><img src="../assets/image/design-latte.png" class="productBox" data-index="24"></div>
+        <h3>【獨家款】咖啡系系列霧面防摔 iPhone 手機殼［咖啡拿鐵］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-americano.png" /></div>
-        <h3>【獨家款】咖啡系系列霧面防摔iPhone手機殼＿咖啡美式 </h3>
+        <div class="photo"><img src="../assets/image/design-americano.png" class="productBox" data-index="25"></div>
+        <h3>【獨家款】咖啡系系列霧面防摔 iPhone 手機殼［咖啡美式］</h3>
         <p>
           ＄ 690 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/design-offduty.png" /></div>
-        <h3>【獨家款】不想上班極簡系列霧面防摔iPhone手機殼＿倒數下班</h3>
+        <div class="photo"><img src="../assets/image/design-offduty.png" class="productBox" data-index="26"></div>
+        <h3>【獨家款】不想上班極簡系列霧面防摔 iPhone 手機殼［倒數下班］</h3>
         <p>
           ＄ 690 TWD
         </p>
@@ -284,122 +262,145 @@
       <p class="all_3">Airpods保護殼</p>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-black.png" /></div>
-        <h3>DEVILCASE AirPods 保護殼 ＿純黑</h3>
+        <div class="photo"><img src="../assets/image/airpods-black.png" class="productBox" data-index="27"></div>
+        <h3>DEVILCASE AirPods 保護殼［純黑］</h3>
         <p>
           ＄ 450 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-darkblue.png" /></div>
-        <h3>DEVILCASE AirPods 保護殼 ＿深藍</h3>
+        <div class="photo"><img src="../assets/image/airpods-darkblue.png" class="productBox" data-index="28"></div>
+        <h3>DEVILCASE AirPods 保護殼［深藍］</h3>
         <p>
           ＄ 450 TWD
         </p>
       </section>
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-brown.png" /></div>
-        <h3>DEVILCASE AirPods 保護殼 ＿可可</h3>
+        <div class="photo"><img src="../assets/image/airpods-brown.png" class="productBox" data-index="29"></div>
+        <h3>DEVILCASE AirPods 保護殼［可可］</h3>
         <p>
           ＄ 450 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-milktea.png" /></div>
-        <h3>DEVILCASE AirPods 保護殼 ＿奶茶</h3>
+        <div class="photo"><img src="../assets/image/airpods-milktea.png" class="productBox" data-index="30"></div>
+        <h3>DEVILCASE AirPods 保護殼［奶茶］</h3>
         <p>
           ＄ 450 TWD
         </p>
       </section>
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-skyblue.png" /></div>
-        <h3>DEVILCASE AirPods 保護殼 ＿天藍</h3>
+        <div class="photo"><img src="../assets/image/airpods-skyblue.png" class="productBox" data-index="31"></div>
+        <h3>DEVILCASE AirPods 保護殼［天藍］</h3>
         <p>
           ＄ 450 TWD
         </p>
       </section>
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-purple.png" /></div>
-        <h3>DEVILCASE AirPods 保護殼 __紫</h3>
+        <div class="photo"><img src="../assets/image/airpods-purple.png" class="productBox" data-index="32"></div>
+        <h3>DEVILCASE AirPods 保護殼［紫］</h3>
         <p>
           ＄ 450 TWD
         </p>
       </section>
       
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-dogsheep.png" /></div>
-        <h3>【獨家設計】CO.ME Planet 微笑豆豆與大菲AirPods防摔保護套 </h3>
+        <div class="photo"><img src="../assets/image/airpods-dogsheep.png" class="productBox" data-index="33"></div>
+        <h3>【獨家設計】CO.ME PlanetAirPods 防摔保護套［微笑豆豆與大菲］</h3>
         <p>
           ＄ 590 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-chestnut.png" /></div>
-        <h3>【獨家設計】CO.ME Planet 栗子微笑打包Airpods保護套 </h3>
+        <div class="photo"><img src="../assets/image/airpods-chestnut.png" class="productBox" data-index="34"></div>
+        <h3>【獨家設計】CO.ME Planet Airpods 保護套［栗子微笑打包］</h3>
         <p>
           ＄ 590 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-dinosaur.png" /></div>
-        <h3>【獨家設計】小恐龍軟糖Airpods防摔保護套 </h3>
+        <div class="photo"><img src="../assets/image/airpods-dinosaur.png" class="productBox" data-index="35"></div>
+        <h3>【獨家設計】Airpods 防摔保護套［小恐龍軟糖］</h3>
         <p>
           ＄ 590 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-chill.png" /></div>
-        <h3>【獨家設計】Am I ugly 悠閒BABY霧面Airpods保護套 </h3>
+        <div class="photo"><img src="../assets/image/airpods-chill.png" class="productBox" data-index="36"></div>
+        <h3>【獨家設計】Am I ugly 霧面 Airpods 保護套［悠閒BABY］</h3>
         <p>
           ＄ 590 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-vegout.png" /></div>
-        <h3>【獨家設計】Am I ugly 耍廢BABY霧面Airpods保護套 </h3>
+        <div class="photo"><img src="../assets/image/airpods-vegout.png" class="productBox" data-index="37"></div>
+        <h3>【獨家設計】Am I ugly 霧面 Airpods 保護套［耍廢BABY］</h3>
         <p>
           ＄ 590 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-vintage.png" /></div>
-        <h3>【獨家設計】復古日系小恐龍霧面Airpods保護套 </h3>
+        <div class="photo"><img src="../assets/image/airpods-vintage.png" class="productBox" data-index="38"></div>
+        <h3>【獨家設計】霧面 Airpods 保護套［復古日系小恐龍］</h3>
         <p>
           ＄ 590 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-lightcolor.png" /></div>
-        <h3>【獨家設計】Smilie淡彩笑臉文字防摔行李箱AirPods保護套 </h3>
+        <div class="photo"><img src="../assets/image/airpods-lightcolor.png" class="productBox" data-index="39"></div>
+        <h3>【獨家設計】防摔行李箱 AirPods 保護套［Smilie淡彩笑臉文字］</h3>
         <p>
           ＄ 490 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-smile.png" /></div>
-        <h3>【獨家設計】Smilie笑臉水磨石防摔行李箱AirPods保護套</h3>
+        <div class="photo"><img src="../assets/image/airpods-smile.png" class="productBox" data-index="40"></div>
+        <h3>【獨家設計】防摔行李箱 AirPods 保護套［Smilie笑臉水磨石］</h3>
         <p>
           ＄ 490 TWD
         </p>
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../assets/image/airpods-toyselect.png" /></div>
-        <h3>【獨家設計】Smilie塗鴉笑臉防摔行李箱AirPods保護套 </h3>
+        <div class="photo"><img src="../assets/image/airpods-toyselect.png" class="productBox" data-index="41"></div>
+        <h3>【獨家設計】防摔行李箱 AirPods 保護套［Smilie塗鴉笑臉］</h3>
         <p>
           ＄ 490 TWD
         </p>
       </section>
     </main>
+
+    <!-- 商品詳情浮動視窗 -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="product">
+            <h3 id="product-name"></h3>
+            <div>
+              <section>
+                <img src="" alt="Product Image" id="product-image">
+              </section>
+              <section id="infoSecond">
+                <p id="product-text"></p>
+                <p id="product-price"></p>
+                
+                <label for="number">數量</label>
+                <input id="number" type="number" min="1" value="1">
+                <button>直接購買</button>
+              </section>
+            </div>
+          </div>
+      </div>
+    </div>
 
     <footer>
       <h5>Copyrgiht @ 2022 All rights reserved</h5>

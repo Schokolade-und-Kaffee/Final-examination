@@ -7,6 +7,9 @@
     <title>素色手機殼</title>
 
     <link rel="stylesheet" href="../../assets/CSS/store.css">
+    <link rel="stylesheet" href="../../assets/CSS/floatingWindow.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/JavaScript/store1.js"></script>
   </head>
   <body>
     <header>
@@ -23,7 +26,6 @@
     </nav>
 
     <main>
-
       <img class="ad01" src="../../assets/image/advertise05.png">
       <p class="title-container"> 素色手機殼</p>
       <div class="plain">
@@ -31,7 +33,7 @@
       </div>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-transparencycase.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-transparencycase.png" class="productBox" data-index="0"></div>
         <h3>Clear 抗黃化透明防摔手機殼＿透明</h3>
         <p>
           ＄ 1020 TWD
@@ -39,14 +41,14 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-blackborder.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-blackborder.png" class="productBox" data-index="1"></div>
         <h3>CrashGuard 邊框防摔手機殼＿黑邊</h3>
         <p>
           ＄ 680 TWD
         </p>
       </section>
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-whiteborder.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-whiteborder.png" class="productBox" data-index="2"></div>
         <h3>CrashGuard 邊框防摔手機殼＿白邊</h3>
         <p>
           ＄ 680 TWD
@@ -54,7 +56,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-greyborder.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-greyborder.png" class="productBox" data-index="3"></div>
         <h3>CrashGuard 邊框防摔手機殼＿灰邊</h3>
         <p>
           ＄ 680 TWD
@@ -62,7 +64,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-purpleborder.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-purpleborder.png" class="productBox" data-index="4"></div>
         <h3>CrashGuard 邊框防摔手機殼＿紫邊</h3>
         <p>
           ＄ 680 TWD
@@ -70,7 +72,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-yellowborder.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-yellowborder.png" class="productBox" data-index="5"></div>
         <h3>CrashGuard 邊框防摔手機殼＿黃邊</h3>
         <p>
           ＄ 680 TWD
@@ -83,7 +85,7 @@
       </div>
     <main>
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-black.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-black.png" class="productBox" data-index="6"></div>
         <h3>DEVILCASE 惡魔防摔殼 AIR＿黑</h3>
         <p>
           ＄ 680 TWD
@@ -91,7 +93,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-blue.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-blue.png" class="productBox" data-index="7"></div>
         <h3>DEVILCASE 惡魔防摔殼 AIR＿藍</h3>
         <p>
           ＄ 680 TWD
@@ -99,7 +101,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-grey.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-grey.png" class="productBox" data-index="8"></div>
         <h3>DEVILCASE 惡魔防摔殼 AIR＿灰</h3>
         <p>
           ＄ 680 TWD
@@ -107,7 +109,7 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-lightbrown.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-lightbrown.png" class="productBox" data-index="9"></div>
         <h3>DEVILCASE 惡魔防摔殼 AIR＿烏龍奶</h3>
         <p>
           ＄ 680 TWD
@@ -121,7 +123,7 @@
 
     <main>
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-mirroblack.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-mirroblack.png" class="productBox" data-index="10"></div>
         <h3> MagSafe 鏡面手機殼＿鏡面黑 </h3>
         <p>
           ＄ 880 TWD
@@ -129,13 +131,36 @@
       </section>
 
       <section class="card">
-        <div class="photo"><img src="../../assets/image/plaincolor-mirrorgold.png" /></div>
+        <div class="photo"><img src="../../assets/image/plaincolor-mirrorgold.png" class="productBox" data-index="11"></div>
         <h3> MagSafe 鏡面手機殼＿鏡面金 </h3>
         <p>
           ＄ 880 TWD
         </p>
       </section>
     </main>
+
+    <!-- 商品詳情浮動視窗 -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="product">
+            <h3 id="product-name"></h3>
+            <div>
+              <section>
+                <img src="" alt="Product Image" id="product-image">
+              </section>
+              <section id="infoSecond">
+                <p id="product-text"></p>
+                <p id="product-price"></p>
+                
+                <label for="number">數量</label>
+                <input id="number" type="number" min="1" value="1">
+                <button>直接購買</button>
+              </section>
+            </div>
+          </div>
+      </div>
+    </div>
 
     <footer>
       <h3 class="buy">該買了八，小朋友才等特價</h3>

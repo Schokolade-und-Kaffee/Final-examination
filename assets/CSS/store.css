@@ -61,10 +61,7 @@ body {
 main {
     padding: 20px;
     width: 100%;
-
     display: grid;
-
-    /* 5*3 grid */
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     grid-auto-flow: row;
@@ -74,10 +71,6 @@ h3 {
     margin: 5px 0px;
     color: #1A485C;
 }
-
-/*section {
-    border: solid gray 5px;
-}*/
 
 section img {
     border: solid gold 5px;
