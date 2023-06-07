@@ -274,3 +274,7 @@ $(document).ready(function() {
     $('#product-modal').hide();
   });
 });
+
+function alert() {
+  alert("已加入至購物車。")
+}
