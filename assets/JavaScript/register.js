@@ -20,6 +20,7 @@ function submitForm() {
         //表單驗證通過，提交表單。
         this.submit();
         alert("註冊成功！")
+        window.location.href = "store.html";
     });
 }
 
