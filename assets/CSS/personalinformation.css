@@ -120,3 +120,20 @@ footer {
   margin: 5px 0px;
   color: #F7FFF7;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: #f0f0f0;
+  text-align: left;
+  padding: 8px;
+}
+
+tbody td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}

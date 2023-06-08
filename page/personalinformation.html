@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>個人資料</title>
     <link rel="stylesheet" href="../assets/CSS/personalinformation.css">
-    <script src="../assets/JavaScript/personalinformation.js"></script>
+    
 </head>
 <body>
     <header>
@@ -37,29 +37,62 @@
     <main>
       
       
-    <form id="profileForm">
-        <label for="username">姓名：</label>
-        <input type="text" id="username" name="username" required>
+      <form id="profileForm">
+          <label for="username">姓名：</label>
+          <input type="text" id="username" name="username" required>
 
-        <label for="email">電子郵件地址：</label>
-        <input type="email" id="email" name="email" required>
+          <label for="email">電子郵件地址：</label>
+          <input type="email" id="email" name="email" required>
 
-        <label for="birthdate">生日日期：</label>
-        <input type="date" id="birthdate" name="birthdate" required>
+          <label for="birthdate">生日日期：</label>
+          <input type="date" id="birthdate" name="birthdate" required>
 
-        <label for="password">密碼：</label>
-        <input type="password" id="password" name="password" required>
+          <label for="password">密碼：</label>
+          <input type="password" id="password" name="password" required>
 
-        <label for="address">收件地址：</label>
-        <textarea id="address" name="address"></textarea>
+          <label for="address">收件地址：</label>
+          <textarea id="address" name="address"></textarea>
 
-        <input type="submit" value="更新">
-    </form>
+          <input type="submit" value="更新">
+      </form>
 
-    
+      <h1>個人購買紀錄</h1>
+      <table id="purchaseTable">
+          <thead>
+            <tr>
+              <th>訂單編號</th>
+              <th>商品名稱</th>
+              <th>價格</th>
+              <th>日期</th>
+            </tr>
+          </thead>
+          <tbody id="purchaseTableBody">
+            <!-- 由 JavaScript 動態生成購買紀錄的表格內容 -->
+          </tbody>
+      </table>
+      <h1>個人評論紀錄</h1>
+      <table id="reviewTable">
+        <thead>
+          <tr>
+            <th>商品名稱</th>
+            <th>評論內容</th>
+            <th>評分</th>
+            <th>日期</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>商品一</td>
+            <td>好棒棒~</td>
+            <td>5</td>
+            <td>2023.05.23</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <footer>
       <h3 class="buy">該買了八，小朋友才等特價</h3>
     </footer>
+    <script src="../assets/JavaScript/personalinformation.js"></script>
 </body>
 </html>
