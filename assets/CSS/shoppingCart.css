@@ -64,34 +64,82 @@ th {
     border: none;
     cursor: pointer;
     border: solid 5px lightgray;
-    margin-left: 35%;
+    margin-left: 40%;
+    margin-top: 3%;
+}
+
+
+.shop {
+    color: white;
+    font-size: 40px;
+    font-family: 'comic sans ms';
+    text-shadow: 7px 7px 5px #000000;
+}
+
+
+.buy {
+    margin: 5px 0px;
+    color: #F7FFF7;
+}
+
+#custom-link {
+    color: #F7FFF7;
+    text-decoration: none;
+}
+
+#commodity-link {
+    color: #F7FFF7;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 #allForm {
-    margin: 0px auto;
+    margin: 5% 0px;
     padding: 0px 10%;
 }
 
 main {
-    padding: 10px 5%;
+    font-size: 28px;
+    padding: 2% 2% 2% 2%;
     float: right;
-    width: 60%;
+    width: 55%;
+    border: solid darkslateblue 3px;
 }
 
 aside {
-    padding: 10px 5%;
+    width: 35%;
+    font-size: 28px;
+    padding: 5% 0 5% 5%;
     float: left;
+    border: solid gainsboro 2px;
 }
+
+label,
+input,
+textarea {
+  display: inline-block;
+  font-size: 28px;
+}
+
 
 #cardCheck {
     background-color: #d0d035;
 }
 
 #expiryDate input {
-    width: 30px;
+    width: 58px;
+    display: inline-block;
+}
+
+#CVV {
+    width: 86px;
 }
 
 .no-spinners::-webkit-inner-spin-button,
 .no-spinners::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+
+#dateLabel {
+  display: flex;
 }

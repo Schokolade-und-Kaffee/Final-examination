@@ -23,73 +23,74 @@
         <div class="icon">
           <a href="../page/contact.html"><img src="../assets/image/message.png"></a>
           <a href="../page/login.html"><img src="../assets/image/person.png"></a>
-          <a href="../page/shoppingCart.html"><img src="../assets/image/buy.png"></a>
+          <a href="../page/shoppingCart.html" title="查看購物車"><img src="../assets/image/buy.png"></a>
         </div>
       </div>
     </header>
 
-      <img class="ad08" src="../assets/image/advertise08.png">
+    <img class="ad08" src="../assets/image/advertise08.png">
 
-      <div class="title-container">
+    <div class="title-container">
+    </div>
+    <div id="allForm">
+      <main>
         <h1>個人資料</h1>
-      </div>
-
-    <main>
-      
-      
-      <form id="profileForm">
+        <form id="profileForm">
           <label for="username">姓名：</label>
-          <input type="text" id="username" name="username" required>
-
-          <label for="email">電子郵件地址：</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="birthdate">生日日期：</label>
+          <input type="text" id="username" name="username" value="某某某" required>
+          <br>
+          <label for="email">電子郵件：</label>
+          <input type="email" id="email" name="email" value="000@mail" required>
+          <br>
+          <label for="birthdate">生日：</label>
           <input type="date" id="birthdate" name="birthdate" required>
-
+          <br>
           <label for="password">密碼：</label>
-          <input type="password" id="password" name="password" required>
-
+          <input type="password" id="password" name="password" value="0000" required>
+          <button onclick="togglePasswordVisibility()">顯示密碼</button>
+          <br>
           <label for="address">收件地址：</label>
           <textarea id="address" name="address"></textarea>
-
+          <br>
           <input type="submit" value="更新">
-      </form>
-
-      <h1>個人購買紀錄</h1>
-      <table id="purchaseTable">
+        </form>
+      </main>
+      <aside>
+        <h1>個人購買紀錄</h1>
+        <table id="purchaseTable">
+            <thead>
+              <tr>
+                <th>訂單編號</th>
+                <th>商品名稱</th>
+                <th>價格</th>
+                <th>日期</th>
+              </tr>
+            </thead>
+            <tbody id="purchaseTableBody">
+              <!-- 由 JavaScript 動態生成購買紀錄的表格內容 -->
+            </tbody>
+        </table>
+        <h1>個人評論紀錄</h1>
+        <table id="reviewTable">
           <thead>
             <tr>
-              <th>訂單編號</th>
               <th>商品名稱</th>
-              <th>價格</th>
+              <th>評論內容</th>
+              <th>評分</th>
               <th>日期</th>
             </tr>
           </thead>
-          <tbody id="purchaseTableBody">
-            <!-- 由 JavaScript 動態生成購買紀錄的表格內容 -->
+          <tbody>
+            <tr>
+              <td>商品一</td>
+              <td>好棒棒~</td>
+              <td>5</td>
+              <td>2023.05.23</td>
+            </tr>
           </tbody>
-      </table>
-      <h1>個人評論紀錄</h1>
-      <table id="reviewTable">
-        <thead>
-          <tr>
-            <th>商品名稱</th>
-            <th>評論內容</th>
-            <th>評分</th>
-            <th>日期</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>商品一</td>
-            <td>好棒棒~</td>
-            <td>5</td>
-            <td>2023.05.23</td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
+        </table>
+      </aside>
+    </div>
     <footer>
       <h3 class="buy">該買了八，小朋友才等特價</h3>
     </footer>

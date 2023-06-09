@@ -27,7 +27,7 @@
           <a href="mailto:s10912125@cycu.edu.tw" title="s10912125@cycu.edu.tw"><img src="../../assets/image/message.png"></a>
           
           <a href="../../page/login.html"><img src="../../assets/image/person.png"></a>
-          <a href="../../page/personalinformation.html"><img src="../../assets/image/buy.png"></a>
+          <a href="../../page/shoppingCart.html" title="查看購物車"><img src="../../assets/image/buy.png"></a>
         </div>
       </div>
     </header>
@@ -162,7 +162,32 @@
                 
                 <label for="number">數量</label>
                 <input id="number" type="number" min="1" value="1">
-                <button>直接購買</button>
+                <button onclick="inCart()">直接購買</button>
+                <br>
+                <br>
+                <h2>填寫評論</h2>
+                <label for="star">星等：</label>
+                <select id="star" onchange="getSelectedValue()">
+                  <option value="">未選擇</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>           
+                <br>
+                <div id="user-review">
+                  <textarea id="comment" placeholder="請輸入評論內容"></textarea>
+                  <button id="commentButton" onclick="submitReview()">提交評論</button>
+                </div>
+                
+                <h2>評論</h2>
+                <div id="other-reviews">
+                  <p>2顆星：因為當初的設計問題！</p>
+                  <p>4顆星：後來沒時間改成 JS 來做篩選功能！</p>
+                  <p>5顆星：上面的提交是能模擬功能的！</p>
+                  <!-- 評論插入這裡 -->
+                </div>
               </section>
             </div>
           </div>

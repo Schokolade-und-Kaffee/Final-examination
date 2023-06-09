@@ -25,7 +25,7 @@
       <div class="icon">
         <a href="mailto:s10912125@cycu.edu.tw" title="發送郵件給我們"><img src="../assets/image/message.png"></a>
         <a href="../page/login.html"><img src="../assets/image/person.png"></a>
-        <a href="../page/shoppingCart.html"><img src="../assets/image/buy.png"></a>
+        <a href="../page/shoppingCart.html" title="查看購物車"><img src="../assets/image/buy.png"></a>
       </div>
     </div>
   </header>
@@ -419,13 +419,15 @@
               <br>
               <div id="user-review">
                 <textarea id="comment" placeholder="請輸入評論內容"></textarea>
-                <button onclick="submitReview()">提交評論</button>
+                <button id="commentButton" onclick="submitReview()">提交評論</button>
               </div>
               
               <h2>評論</h2>
               <div id="other-reviews">
                 <p>5顆星：東西很棒！</p>
-                <!-- 別人的評論會動態插入這裡 -->
+                <p>4顆星：好爽！</p>
+                <p>5顆星：上面的提交是能模擬功能的！</p>
+                <!-- 評論插入這裡 -->
               </div>
             </section>
           </div>

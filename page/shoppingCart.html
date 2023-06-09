@@ -21,7 +21,7 @@
           <div class="icon">
             <a href="mailto:s10912125@cycu.edu.tw" title="發送郵件給我們"><img src="../assets/image/message.png"></a>
             <a href="../page/login.html"><img src="../assets/image/person.png"></a>
-            <a href="../page/shoppingCart.html"><img src="../assets/image/buy.png"></a>
+            <a href="../page/shoppingCart.html" title="查看購物車"><img src="../assets/image/buy.png"></a>
           </div>
         </div>
     </header>
@@ -64,7 +64,7 @@
           <label for="holderPerson">持卡人姓名：</label>
           <input type="text" id="holderPerson" name="holderPerson" placeholder="輸入持卡人姓名"><br><br>
   
-          <label for="expiryDate">到期日：</label>
+          <label id="dateLabel" for="expiryDate">到期日：</label>
           <!--<input type="number" id="expiryDate" name="expiryDate" placeholder="MM / YY">-->
           <div id="expiryDate">
             <input type="number" class="no-spinners" maxlength="2" placeholder="MM">
@@ -74,7 +74,7 @@
           <br><br>
   
           <label for="CVV">CVV：</label>
-          <input type="number" class="no-spinners" id="CVV" name="CVV" placeholder="輸入 CVV" maxlength="3"><br><br>
+          <input type="number" class="no-spinners" id="CVV" name="CVV" placeholder="CVV" maxlength="3"><br><br>
   
           <input class="commonButton" id="cardCheck" type="submit" value="註冊卡片">
         </form>
