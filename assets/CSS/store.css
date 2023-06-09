@@ -13,30 +13,30 @@
     align-items: center;
   }
   
-  .shop {
+.shop {
     font-size: 40px;
     font-weight: bold;
     padding-left: 40%;
-  }
+}
 
-  .menu {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .menu a:not(:last-child) {
+}
+
+.menu a:not(:last-child) {
     margin-right: 30px;
-  }
-  
-  .icon img {
+}
+
+.icon img {
     height: 35px;
     margin-right: 20px;
-  }
+}
 
-  #commodity-link:hover {
+#commodity-link:hover {
     color: #FFE66D; 
-  }
+}
 
 body {
     background-color: #F7FFF7;

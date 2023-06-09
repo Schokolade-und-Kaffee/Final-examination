@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/CSS/shoppingCart.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <a href="../index.html" id="custom-link">
+            <div class="shop">ShellMood</div>
+          </a>
+          <div class="menu">
+            <a href="store.html" id="commodity-link">所有商品</a>
+            <a href="sub/store1.html" id="commodity-link">素色手機殼</a>
+            <a href="sub/store2.html" id="commodity-link">設計款手機殼</a>
+            <a href="sub/store3.html" id="commodity-link">Airpods保護殼</a>
+          </div>
+          <div class="icon">
+            <a href="mailto:s10912125@cycu.edu.tw" title="發送郵件給我們"><img src="../assets/image/message.png"></a>
+            <a href="../page/login.html"><img src="../assets/image/person.png"></a>
+            <a href="../page/shoppingCart.html"><img src="../assets/image/buy.png"></a>
+          </div>
+        </div>
+    </header>
+    <div id="allForm">
+      <main>
+        <h1>購物車</h1>
+        <table>
+          <tr>
+            <th>商品名稱</th>
+            <th>價格</th>
+            <th>數量</th>
+            <th>小計</th>
+          </tr>
+          <tr>
+            <td>商品 A</td>
+            <td>$10.00</td>
+            <td>2</td>
+            <td>$20.00</td>
+          </tr>
+          <tr>
+            <td>商品 B</td>
+            <td>$15.00</td>
+            <td>1</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="total">總計</td>
+            <td class="total">$55.00</td>
+          </tr>
+        </table>
+      
+        <button class="commonButton">立即結帳</button>
+      </main>
+      <aside>
+        <h1>信用卡資訊</h1>
+        <form id="creditCard">
+          <label for="cardNumber">信用卡號碼：</label>
+          <input type="number" class="no-spinners" id="cardNumber" name="cardNumber" placeholder="輸入信用卡號碼"><br><br>
+  
+          <label for="holderPerson">持卡人姓名：</label>
+          <input type="text" id="holderPerson" name="holderPerson" placeholder="輸入持卡人姓名"><br><br>
+  
+          <label for="expiryDate">到期日：</label>
+          <!--<input type="number" id="expiryDate" name="expiryDate" placeholder="MM / YY">-->
+          <div id="expiryDate">
+            <input type="number" class="no-spinners" maxlength="2" placeholder="MM">
+            <span>/</span>
+            <input type="number" class="no-spinners" maxlength="2" placeholder="YY">
+          </div>
+          <br><br>
+  
+          <label for="CVV">CVV：</label>
+          <input type="number" class="no-spinners" id="CVV" name="CVV" placeholder="輸入 CVV" maxlength="3"><br><br>
+  
+          <input class="commonButton" id="cardCheck" type="submit" value="註冊卡片">
+        </form>
+      </aside>
+    </div>
+    
+</body>
+</html>

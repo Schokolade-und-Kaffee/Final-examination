@@ -1,5 +1,6 @@
 # Final-examination
 For Final-examination.
+學習 Git 來控管版本。
 
 ## 首次加入編輯的行列的話，請從第一步做起。
 ### 指令中的角括弧（大小於）不用打。引號擇需要。
