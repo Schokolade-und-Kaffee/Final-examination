@@ -85,13 +85,10 @@ footer {
 }
 
 .card {
-    
     padding: 20px;
     margin: 10px;
     border-radius: 20px;
     text-align: center;
-
-    background-image: url(image/background.jpg);
     background-size: cover;
 }
 

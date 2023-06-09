@@ -9,18 +9,18 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
-  }
-  
+}
+
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 40px;
-    width: 60%;
+    width: 80%;
     height: 60%;
 }
-  
+
 .close {
     color: #aaa;
     float: right;
@@ -28,7 +28,7 @@
     font-weight: bold;
     cursor: pointer;
 }
-  
+
 .close:hover,
 .close:focus {
     color: black;
@@ -37,8 +37,8 @@
 }
 
 .product {
-    width: 940px;
-    height: 100px;
+    width: 80%;
+    height: 50%;
 }
 
 #product-image {
@@ -79,7 +79,7 @@ button {
     padding: 10px;
     margin-top: 10px;
     cursor: pointer;
-} 
+}
 
 .product div {
     display: grid;
@@ -88,4 +88,51 @@ button {
 
 #infoSecond {
     margin: 30px;
+    overflow-y: scroll;
+    height: 450px;
+}
+
+#user-review {
+    margin-bottom: 20px;
+}
+
+#user-review input,
+#user-review textarea {
+    width: 100%;
+    font-size: 24px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#user-review textarea {
+    height: 100px;
+}
+
+#other-reviews {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: block;
+}
+
+.review {
+    margin-bottom: 10px;
+}
+
+.review strong {
+    font-weight: bold;
+}
+
+.review span {
+    font-size: 18px;
+    color: #555;
+}
+
+.rating-container label{
+    font-size: 12px;
+}
+
+select {
+    font-size: 28px;
 }

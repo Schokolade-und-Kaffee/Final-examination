@@ -275,6 +275,21 @@ $(document).ready(function() {
   });
 });
 
-function alert() {
+function inCart() {
   alert("已加入至購物車。")
+}
+
+
+var selectNumber;
+function getSelectedValue() {
+  selectNumber = document.getElementById("star");
+  window.selectedValue = selectNumber.value;
+}
+
+function submitReview() {
+  alert("評論已上傳。");
+  const pElement = document.createElement("p");
+  pElement.innerText = selectedValue + "顆星：" + document.getElementById("comment").value;
+  const element = document.getElementById("other-reviews");
+  element.appendChild(pElement);
 }

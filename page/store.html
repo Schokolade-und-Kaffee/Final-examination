@@ -392,23 +392,46 @@
     <!-- 商品詳情浮動視窗 -->
     <div id="product-modal" class="modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
-          <div class="product">
-            <h3 id="product-name"></h3>
-            <div>
-              <section>
-                <img src="" alt="Product Image" id="product-image">
-              </section>
-              <section id="infoSecond">
-                <p id="product-text"></p>
-                <p id="product-price"></p>
-                
-                <label for="number">數量</label>
-                <input id="number" type="number" min="1" value="1">
-                <button onclick="alert()">直接購買</button>
-              </section>
-            </div>
+        <span class="close">&times;</span>
+        <div class="product">
+          <h3 id="product-name"></h3>
+          <div>
+            <section>
+              <img src="" alt="Product Image" id="product-image">
+            </section>
+            <section id="infoSecond">
+              <p id="product-text"></p>
+              <p id="product-price"></p>
+              
+              <label for="number">數量</label>
+              <input id="number" type="number" min="1" value="1">
+              <button onclick="inCart()">直接購買</button>
+              <br>
+              <br>
+              <h2>填寫評論</h2>
+              <label for="star">星等：</label>
+              <select id="star" onchange="getSelectedValue()">
+                <option value="">未選擇</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>           
+              <br>
+              <div id="user-review">
+                <textarea id="comment" placeholder="請輸入評論內容"></textarea>
+                <button onclick="submitReview()">提交評論</button>
+              </div>
+              
+              <h2>評論</h2>
+              <div id="other-reviews">
+                <p>東西很棒！</p>
+                <!-- 別人的評論會動態插入這裡 -->
+              </div>
+            </section>
           </div>
+        </div>
       </div>
     </div>
 
